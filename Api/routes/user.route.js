@@ -1,12 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
+import { test } from "../controllers/user.controller.js";
 
-const router = express.userRouter();
+const router = express.Router();
 
-router.use("/test", (req, res) => {
-  res.json({
-    message: "hello world",
-  });
-});
+
+router.get("/test", test);
+
+// Routing for signin
+
 
 export default router;
