@@ -47,7 +47,7 @@ export default function SignUp() {
         Sign Up
       </h1>
 
-      <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+      <form onSubmit={handleSubmit} className="flex flex-col gap-4 ">
         <input
           onChange={handleChange}
           type="text"
